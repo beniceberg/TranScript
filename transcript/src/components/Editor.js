@@ -17,6 +17,8 @@ class Editor extends Component {
         words.forEach(word => {
           if (word.dataset.start < nextProps.time) {
             word.setAttribute("style", "background-color: #E6F0F4;");
+          } else {
+            word.setAttribute("style", "background-color: transparant;");
           }
         });
       });
